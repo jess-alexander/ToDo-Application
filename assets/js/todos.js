@@ -1,11 +1,11 @@
 
 
-$("ul").on("click", "li", (function(){  //Listener is added to the parent, in this case the UL
+$("ul").on("click", "li", function(){  //Listener is added to the parent, in this case the UL
 									   //read as "when an li is clicked, inside a ul" run this code.
 	$(this).toggleClass("completed");  // check off specific todos by clicking
 });
 
-$("ul").on("click", "span", (function(event){ //click on X to delete ToDoß
+$("ul").on("click", "span", function(event){ //click on X to delete ToDoß
 	event.stopPropagation(); //stop bubble effect of also firing li click event
 
 	$(this).parent().fadeOut(500,function(){ //fadeout the li, not the span

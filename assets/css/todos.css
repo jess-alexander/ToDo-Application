@@ -5,3 +5,8 @@
 	border: 2px solid grey;
 	;
 }
+
+.completed{
+	color: grey;
+	text-decoration: line-through;
+}

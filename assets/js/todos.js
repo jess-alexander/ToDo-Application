@@ -19,10 +19,9 @@ $("input[type='text']").keypress(function(){
 		var todoText = $(this).val();//grab new toDo text from input
 
 		$(this).val("");	//clear input
-		$("ul").append("<li><span>X </span>" + todoText + "</li>"); //add a new LI to insert input into the HTML
+		$("ul").append("<li><span><i class='fa fa-trash-o' aria-hidden='true'></i>  </span>" + todoText + "</li>"); //add a new LI to append input into the HTML
 
 		
 	}
 	
-
 })

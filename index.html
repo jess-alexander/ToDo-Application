@@ -2,16 +2,21 @@
 <html>
 <head>
 	<title>ToDo List</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
+	<!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> --> <!-- duplicate code to connect to fontAwesome.com -->
+	<script src="https://use.fontawesome.com/f1a4de6791.js"></script>
+	
 </head>
 <body>
 	<div id = "container">
-		<h1>To-Do List</h1>
-		<input type="text" >
+		<h1>To-Do List <i class="fa fa-plus" aria-hidden="true"></i></h1>
+		<input type="text" placeholder="Add New Todo" >
 		<ul>
-			<li><span>X </span>Go To Potions Class</li>
-			<li><span>X </span>Buy New Robes</li>
-			<li><span>X </span>Visit Haggrid</li>
+			<li><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Go To Potions Class</li>
+			<li><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Buy New Robes</li>
+			<li><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Visit Haggrid</li>
 		</ul>
 	</div>
 	

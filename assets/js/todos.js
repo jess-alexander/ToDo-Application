@@ -20,8 +20,10 @@ $("input[type='text']").keypress(function(){
 
 		$(this).val("");	//clear input
 		$("ul").append("<li><span><i class='fa fa-trash-o' aria-hidden='true'></i>  </span>" + todoText + "</li>"); //add a new LI to append input into the HTML
-
 		
-	}
-	
+	}	
 })
+
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
+});
